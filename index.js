@@ -8,8 +8,6 @@ const port = process.env.PORT || 9000
 const dbURL = process.env.DB_URL || 'mongodb://127.0.0.1:27017'
 const authorize = require('./authorize')
 
-
-
 app.use(express.json());
 app.use(cors())
 app.use("/auth",userAuth)
